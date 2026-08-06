@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --beige-50: #FAF6EE;
+    --beige-100: #F5F0E8;
+    --beige-light: #F0E8DC;
+    --brown-light: #E8D5C4;
+    --brown-main: #A47551;
+    --brown-sub: #6B5E52;
+    --brown-dark: #3E3A36;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+body {
+    background-color: var(--beige-light);
+    color: var(--brown-dark);
+}
+
+/* Beige Tailwind Custom Colors */
+.bg-beige-50 {
+    background-color: var(--beige-50);
+}
+
+.bg-beige-100 {
+    background-color: var(--beige-100);
+}
+
+.bg-beige-light {
+    background-color: var(--beige-light);
+}
+
+.bg-brown-light {
+    background-color: var(--brown-light);
+}
+
+.text-brown-main {
+    color: var(--brown-main);
+}
+
+.text-brown-sub {
+    color: var(--brown-sub);
+}
+
+.text-brown-dark {
+    color: var(--brown-dark);
+}
+
+.border-brown-light {
+    border-color: var(--brown-light);
+}
+
+.bg-brown-main {
+    background-color: var(--brown-main);
+}
+
+.bg-brown-dark {
+    background-color: var(--brown-dark);
+}
+
+.hover\:bg-brown-main:hover {
+    background-color: var(--brown-main);
+}
+
+.hover\:bg-brown-dark:hover {
+    background-color: var(--brown-dark);
+}
+
+/* Smooth Scroll */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Header Transition */
+#header {
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+/* Section Spacing */
+section {
+    scroll-margin-top: 80px;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+/* Button Transitions */
+button, a[href^="#"] {
+    transition: all 0.3s ease;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 16px !important;
+    }
+
+    h2 {
+        font-size: 28px !important;
+    }
+}
+
+/* Project Card Hover Effects */
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(62, 58, 54, 0.1);
+}
+
+.hover\:shadow-xl:hover {
+    box-shadow: 0 20px 25px rgba(62, 58, 54, 0.15);
+}
